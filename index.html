@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Zeta Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="full-width">
+  <div class="full-width z-index-5 p-fixed top-0 left-0 header border-bottom-default white-bg-color">
+    <div class="container">
+      <div class="full-width">
+        <div class="float-left">
+          <div class="display-inline">
+            <img class="logo" src="img/logo.png" />
+          </div>
+          <div class="display-inline font-large hide-xs">
+            <span class="primary-fg-color font-bold">Hubstaff</span> <span class="dull-fg-color">Projects</span>
+          </div>
+        </div>
+
+        <div class="float-right">
+          <div class="display-inline float-left margin-medium no-vertical-margin">
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="display-inline float-left margin-medium no-vertical-margin p-relative">
+            <i class="fa fa-bell-o"></i>
+            <span class="p-absolute notification-count line-height-normal">2</span>
+          </div>
+          <div class="display-inline float-left margin-medium no-vertical-margin line-height-normal">
+            <div class="display-inline margin-small no-horizontal-margin">
+              <div class="primary-image" style="background-image: url(img/actor.jpg);"></div>
+            </div>
+          </div>
+          <div class="display-inline float-left">
+            <i class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+
+  <div class="full-width border-bottom-default padding-xlarge no-horizontal-padding">
+    <div class="container second-part">
+      <div class="width-33 full-width-sm">
+        <div class="primary-add float-left">
+          <i class="fa fa-plus"></i>
+        </div>
+        <div class="margin-xsmall no-vertical-margin float-left primary-image display-inline" style="background-image: url(img/actor.jpg);"></div>
+        <div class="margin-xsmall no-vertical-margin float-left primary-image display-inline" style="background-image: url(img/actor.jpg);"></div>
+        <div class="margin-xsmall no-vertical-margin float-left primary-image display-inline" style="background-image: url(img/actor.jpg);"></div>
+        <div class="margin-xsmall no-vertical-margin float-left primary-image display-inline" style="background-image: url(img/actor.jpg);"></div>
+        <div class="margin-xsmall no-vertical-margin float-left primary-count display-inline">
+          +42
+        </div>
+      </div>
+
+      <div class="width-33 text-align-center primary-fg-color full-width-sm">
+        <div class="primary-fg-color padding-small no-top-padding no-horizontal-padding">
+          Graphic Design
+        </div>
+        <div class="font-xsmall">
+          <div class="display-inline ready-fg-color">
+            <div class="red-dot"></div>
+            3 override
+          </div>
+          <div class="display-inline ready-fg-color">
+            <div class="yellow-dot"></div>
+            4 approaching deadline
+          </div>
+          <div class="display-inline margin-small no-vertical-margin no-right-margin">
+            <span class="fa fa-money"></span> <span class="progress-fg-color"> $200</span> / <span class="">$450</span>
+          </div>
+        </div>
+      </div>
+      <div class="width-33 text-align-right text-align-center-sm tracking-section full-width-sm">
+        <div class="tracking font-bold">
+          <span class="font-normal color-lighter">Tracking time on </span>2 cards <span class="font-normal fa fa-eye ready-fg-color"></span>
+        </div>
+        <span class="fa fa-bars"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-width padding-large no-horizontal-padding default-bg-color">
+    <div class="container">
+
+      <div class="width-25 padding-small full-width-xs">
+        <div class="full-width task-bg-color white-fg-color padding-large">
+          <div class="float-left font-xsmall">
+            IDEAS / TASKS
+          </div>
+          <i class="float-right fa fa-ellipsis-v white-fg-color"></i>
+        </div>
+
+        <div class="full-width margin-small no-horizontal-margin p-relative">
+          <input type="text" required class="input-field" />
+          <i class="approved-fg-color fa fa-check okay-icon"></i>
+          <i class="approved-fg-color fa fa-times cancel-icon"></i>
+        </div>
+
+        <div class="full-width" id="task">
+
+        </div>
+      </div>
+
+      <div class="width-25 padding-small full-width-xs">
+        <div class="full-width progress-bg-color white-fg-color padding-large">
+          <div class="float-left font-xsmall">
+            IN PROGRESS
+          </div>
+          <i class="float-right fa fa-ellipsis-v white-fg-color"></i>
+        </div>
+
+        <div class="full-width margin-small no-horizontal-margin p-relative">
+          <input type="text" required class="input-field" />
+          <i class="approved-fg-color fa fa-check okay-icon"></i>
+          <i class="approved-fg-color fa fa-times cancel-icon"></i>
+        </div>
+
+        <div class="full-width" id="progress">
+
+        </div>
+      </div>
+
+      <div class="width-25 padding-small full-width-xs">
+        <div class="full-width ready-bg-color white-fg-color padding-large">
+          <div class="float-left font-xsmall">
+            READY FOR REVIEW
+          </div>
+          <i class="float-right fa fa-ellipsis-v white-fg-color"></i>
+        </div>
+
+        <div class="full-width margin-small no-horizontal-margin p-relative">
+          <input type="text" required class="input-field" />
+          <i class="approved-fg-color fa fa-check okay-icon"></i>
+          <i class="approved-fg-color fa fa-times cancel-icon"></i>
+        </div>
+
+        <div class="full-width" id="ready">
+
+        </div>
+      </div>
+
+      <div class="width-25 padding-small full-width-xs">
+        <div class="full-width approved-bg-color white-fg-color padding-large">
+          <div class="float-left font-xsmall">
+            APPROVED
+          </div>
+          <i class="float-right fa fa-ellipsis-v white-fg-color"></i>
+        </div>
+
+        <div class="full-width margin-small no-horizontal-margin p-relative">
+          <input type="text" required class="input-field" />
+          <i class="approved-fg-color fa fa-check okay-icon"></i>
+          <i class="approved-fg-color fa fa-times cancel-icon"></i>
+        </div>
+
+        <div class="full-width" id="approved">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
